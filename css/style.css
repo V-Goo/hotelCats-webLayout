@@ -82,6 +82,10 @@ ul {
   list-style-type: none;
 }
 
+h1 {
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -108,6 +112,10 @@ ul {
   padding: 12px 83px 12px 98px;
   outline:1px solid orangered;
 }
+.logo {
+  display: block;
+  line-height: 0;
+}
 
 .nav-items {
   display: flex;
@@ -118,8 +126,50 @@ ul {
 
 .nav-link {
 padding: 30px 15px;
-flex: 1 0 auto;
+/* flex: 1 0 auto; */
 font-family: Lato;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+}
+
+.hero {
+  padding: 150px 198px;
+  background: url('../img/koteyka-HotelCats.jpg') no-repeat;
+}
+.hero-content {
+}
+.hero-place {
+  font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+}
+.hero-title {
+  margin-bottom: 8px;
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 700;
+font-size: 62px;
+line-height: 1.1;
+}
+
+.hero-description {
+  margin-bottom: 30px;
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.1;
+}
+
+.hero-button {
+  padding: 18px 63px 20px 30px;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Lato';
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
