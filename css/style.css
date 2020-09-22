@@ -1,0 +1,86 @@
+/*  ! Warning */
+/* todo:   */
+/* ? ??? */
+/* /// Что Это? */
+/* * Звёздочка  */
+/* blah-blah */
+
+@font-face {
+  font-family: 'Lato';
+  src:  url('../fonts/lato_light-300.woff2') format('woff2'),
+          url('../fonts/lato_light_300.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato_regular-400.woff2') format('woff2'),
+        url('latoregular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato_medium-500.woff2') format('woff2'),
+        url('../fonts/lato_medium-500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato_semibold-600.woff2') format('woff2'),
+        url('../fonts/lato_semibold-600.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato_bold-700.woff2') format('woff2'),
+        url('../fonts/lato_bold-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/rubik_medium-500.woff2') format('woff2'),
+          url('../fonts/rubik_medium-500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/rubik_bold-700.woff2') format('woff2'),
+          url('../fonts/rubik_bold-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boomboom';
+  src: url('../fonts/boomboom.woff2') format('woff2'),
+          url('../fonts/boomboom.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
