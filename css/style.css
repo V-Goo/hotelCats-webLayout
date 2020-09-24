@@ -66,6 +66,7 @@
 
 
 
+/*  * Сброс стилей */
 
 * {
   box-sizing: border-box;
@@ -74,8 +75,10 @@
 }
 
 a {
-  text-decoration: none;
+  display: inline-block;
   color: inherit;
+  text-decoration: none;
+  text-align: center; /* ? */
 }
 
 ul {
@@ -85,6 +88,23 @@ ul {
 h1 {
   margin: 0;
 }
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+              appearance: none;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  border: 0;
+  border-radius: 0;
+  background: #ccc;
+  /* background-color: transparent; */
+  cursor: pointer;
+}
+
+/* * Common Styles */
 
 .visually-hidden {
   position: absolute;
@@ -99,40 +119,78 @@ h1 {
   overflow: hidden;
 }
 
-.container {
+.page {
   max-width: 1366px;
   margin: 0 auto;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.187;
+  
 }
 
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 83px 12px 98px;
-  outline:1px solid orangered;
-}
-.logo {
-  display: block;
-  line-height: 0;
+.container {
+  padding: 0 98px;
 }
 
-.nav-items {
+.flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
+.title {
+  font-family: 'Rubik';
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.187;
+}
+
+/*  * Styled Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  min-width: 122px;
+  border-radius: 25px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.btn__big {
+  padding: 7px 7px 7px 30px;
+}
+.btn__light {
+  background: #fffefd;
+  box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+}
+.btn-icon {
+  margin-left: 20px;
+}
+
+/*  * Header */
+.header {
+}
+.logo {
+  display: block;
+  line-height: 0;
+}
+.heder-nav {
+  margin-right: -15px;
+}
+.nav-items {
+}
 .nav-link {
-padding: 30px 15px;
-/* flex: 1 0 auto; */
-font-family: Lato;
-font-style: normal;
+padding: 28px 15px;
 font-weight: 600;
-font-size: 16px;
 line-height: 19px;
 }
+
+/* * Hero */
 
 .hero {
   padding: 150px 198px;
@@ -141,37 +199,62 @@ line-height: 19px;
 .hero-content {
 }
 .hero-place {
-  font-family: Lato;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 17px;
+  font-size: 14px;
+  line-height: 17px;
 }
 .hero-title {
   margin-bottom: 8px;
   font-family: 'Rubik';
-font-style: normal;
-font-weight: 700;
-font-size: 62px;
-line-height: 1.1;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 1.1;
 }
 
 .hero-description {
-  margin-bottom: 30px;
-  font-family: 'Lato';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.1;
+  margin-bottom: 37px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.1;
 }
 
-.hero-button {
-  padding: 18px 63px 20px 30px;
-  border: none;
-  border-radius: 25px;
-  font-family: 'Lato';
+/*  * Section Why */
+.why {
+  align-content: flex-end;
+  margin: 0 83px;
+  padding-top: 134px;
+  background: #FFFEFD;
+}
+.why-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.why-items {
+  align-items: stretch;
+  margin: -10px 0;
+}
+.why-item {
+  display: block;
+  flex: 0 0 30%;
+  margin: 10px 15px;
+  padding: 30px;
+  min-height: 321px;
+  background: #FFFFFF;
+box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+border-radius: 8px;
+
+/* outline: 1px solid orange; */
+}
+.why-icon {
+  margin-bottom: 25px;
+}
+.why-title__item {
+  margin-bottom: 5px;
+  font-family: 'Rubik';
 font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 19px;
+font-weight: 500;
+font-size: 22px;
+line-height: 140%;
+}
+.why-text{
+  line-height: 1.400;
 }
